@@ -1,0 +1,1 @@
+Ores Alpha Test. Not known to work in Freeminer, as I am unable to test it at this time.
