@@ -28,10 +28,10 @@ minetest.register_craftitem("ores:adamantinelump", {
 --Alabaster
 
 minetest.register_node("ores:alabasterore", {
-	description = "Alabaster Rock",
-	tiles = {"ores_alabasterore.png"},
+	description = "Alabaster Ore",
+	tiles = {"default_stone.png^ores_alabasterore.png"},
 	is_ground_content = true,
-	groups = {cracky=3, stone=1, flammable=1},
+	groups = {cracky=3},
 	drop = 'ores:alabasterlump',
 	sounds = default.node_sound_stone_defaults(),
 })
@@ -48,12 +48,6 @@ minetest.register_ore({
 })
 
 minetest.register_craftitem("ores:alabasterlump", {
-	description = "Alabaster Rock",
+	description = "Alabaster Lump",
 	inventory_image = "ores_alabasterlump.png"
-})
-
-minetest.register_craft({
-	type = "cooking",
-	output = "ores:alabasterore",
-	recipe = "ores:alabasterlump",
 })
