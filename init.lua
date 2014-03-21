@@ -57,3 +57,32 @@ minetest.register_craft({
 	output = "ores:alabasterore",
 	recipe = "ores:alabasterlump",
 })
+
+--Aluminum
+
+minetest.register_node("ores:aluminumore", {
+	description = "Aluminum Ore",
+	tiles = {"ores_aluminumore.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:aluminumlump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:aluminumore",
+	wherein			= "default:stone",
+	clust_scarcity	= 27*27*27,
+	clust_num_ores	= 9,
+	clust_size		= 5,
+	height_min		= -512,
+	height_max		= -256,
+})
+
+minetest.register_craftitem("ores:aluminumlump", {
+	description = "Aluminum Ore",
+	inventory_image = "ores_alabasterlump.png"
+})
+
+--Kudos to you if you found this Easter egg!
