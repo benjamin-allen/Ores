@@ -64,7 +64,7 @@ minetest.register_node("ores:aluminumore", {
 	description = "Aluminum Ore",
 	tiles = {"ores_aluminumore.png"},
 	is_ground_content = true,
-	groups = {cracky=3},
+	groups = {cracky=2},
 	drop = 'ores:aluminumlump',
 	sounds = default.node_sound_stone_defaults(),
 })
@@ -86,3 +86,30 @@ minetest.register_craftitem("ores:aluminumlump", {
 })
 
 --Kudos to you if you found this Easter egg!
+
+--Alunite
+
+minetest.register_node("ores:aluniteore", {
+	description = "Alunite",
+	tiles = {"ores_aluminumore.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:alunitecrystal',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:aluniteore",
+	wherein			= "default:stone",
+	clust_scarcity	= 7*7*7,
+	clust_num_ores	= 12,
+	clust_size		= 6,
+	height_min		= -512,
+	height_max		= -128,
+})
+
+minetest.register_craftitem("ores:alunitecrystal", {
+	description = "Alunite Crystals"
+	inventory_image = "ores_alunitecrystal.png"
+})
