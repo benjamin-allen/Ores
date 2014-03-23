@@ -11,3 +11,5 @@ Aluminum
 Alunite
 Andesite
 Anhydrite
+Basalt
+Bauxite
