@@ -62,7 +62,7 @@ minetest.register_craft({
 
 minetest.register_node("ores:aluminumore", {
 	description = "Aluminum Ore",
-	tiles = {"ores_aluminumore.png"},
+	tiles = {"ores_aluminumore.png^default:stone.png"},
 	is_ground_content = true,
 	groups = {cracky=2,flammable=1},
 	drop = 'ores:aluminumlump',
@@ -82,7 +82,7 @@ minetest.register_ore({
 
 minetest.register_craftitem("ores:aluminumlump", {
 	description = "Aluminum Ore",
-	inventory_image = "ores_alabasterlump.png"
+	inventory_image = "ores_aluminumlump.png"
 })
 
 --Kudos to you if you found this Easter egg!
@@ -91,7 +91,7 @@ minetest.register_craftitem("ores:aluminumlump", {
 
 minetest.register_node("ores:aluniteore", {
 	description = "Alunite",
-	tiles = {"ores_aluminumore.png"},
+	tiles = {"ores_aluniteore.png^default:stone.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	drop = 'ores:alunitecrystal',
