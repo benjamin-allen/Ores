@@ -82,7 +82,7 @@ minetest.register_ore({
 
 minetest.register_craftitem("ores:aluminumlump", {
 	description = "Aluminum Ore",
-	inventory_image = "ores_alabasterlump.png"
+	inventory_image = "ores_aluminumlump.png"
 })
 
 --Kudos to you if you found this Easter egg!
@@ -166,4 +166,57 @@ minetest.register_ore({
 minetest.register_craftitem("ores:anhydritecrystal", {
 	description = "Anhydrite",
 	inventory_image = "ores_anhydritecrystal.png"
+})
+
+--Basalt
+
+minetest.register_node("ores:basaltore", {
+	description = "Basalt",
+	tiles = {"ores_basaltore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:basaltrock',
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:basaltore",
+	wherein			= "default:stone",
+	clust_scarcity	= 7*7*7,
+	clust_num_ores	= 320,
+	clust_size		= 7,
+	height_min		= -4096,
+	height_max		= 0,
+})
+
+minetest.register_craftitem("ores:basaltrock", {
+	description = "Basalt Rock",
+	inventory_image = "ores_basaltrock.png"
+})
+
+--Bauxite
+
+minetest.register_node("ores:bauxiteore", {
+	description = "Buaxite",
+	tiles = {"ores_bauxiteore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:bauxiterock',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:bauxiteore",
+	wherein			= "default:stone",
+	clust_scarcity	= 15*15*15,
+	clust_num_ores	= 10,
+	clust_size		= 5,
+	height_min		= -10000,
+	height_max		= 128,
+})
+
+minetest.register_craftitem("ores:bauxiterock", {
+	description = "Bauxite Rock",
+	inventory_image = "ores_bauxiterock.png"
 })
