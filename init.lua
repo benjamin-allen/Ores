@@ -110,7 +110,7 @@ minetest.register_ore({
 })
 
 minetest.register_craftitem("ores:alunitecrystal", {
-	description = "Alunite Crystals"
+	description = "Alunite Crystals",
 	inventory_image = "ores_alunitecrystal.png"
 })
 
