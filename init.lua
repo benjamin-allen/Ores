@@ -64,7 +64,7 @@ minetest.register_node("ores:aluminumore", {
 	description = "Aluminum Ore",
 	tiles = {"ores_aluminumore.png"},
 	is_ground_content = true,
-	groups = {cracky=2},
+	groups = {cracky=2,flammable=1},
 	drop = 'ores:aluminumlump',
 	sounds = default.node_sound_stone_defaults(),
 })
@@ -112,4 +112,31 @@ minetest.register_ore({
 minetest.register_craftitem("ores:alunitecrystal", {
 	description = "Alunite Crystals"
 	inventory_image = "ores_alunitecrystal.png"
+})
+
+--Andesite
+
+minetest.register_node("ores:andesiteore", {
+	description = "Andesite",
+	tiles = {"ores_andesiteore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:andesiterock',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:andesiteore",
+	wherein			= "default:stone",
+	clust_scarsity	= 8*8*8,
+	clust_num_ores	= 26,
+	clust_size		= 7,
+	height_min		= -1024,
+	height_max		= -718,
+})
+
+minetest.register_craftitem("ores:andesiterock", {
+	description = "Andesite Rock"
+	inventory_image = "ores_andesiterock.png"
 })
