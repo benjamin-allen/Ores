@@ -9,3 +9,5 @@ Adamantine
 Alabaster
 Aluminum
 Alunite
+Andesite
+Anhydrite
