@@ -137,6 +137,6 @@ minetest.register_ore({
 })
 
 minetest.register_craftitem("ores:andesiterock", {
-	description = "Andesite Rock"
+	description = "Andesite Rock",
 	inventory_image = "ores_andesiterock.png"
 })
