@@ -6,24 +6,14 @@ An ores mod intended for Mito551's Dwarves Game. It can also be used as a standa
 ================================
 List of Ores:
 <<<<<<< HEAD
-Adamantine				[Textured by John1]
-Alabaster				[Textured by Enke]
-Aluminum				[Textured by Enke]
-Alunite					[Textured by Enke]
-Andesite				[Textured by Enke]
-Anhydrite				[Textured by Enke]
-Basalt					[Textured by Enke]
-Bauxite					[Textured by Enke]
-Bismuthine Bronze		[Textured by John1]
-Bituminous Coal			[Textured by John1]
-Borax					[Textured by John1]
-=======
-Adamantine
-Alabaster
-Aluminum
-Alunite
-Andesite
-Anhydrite
-Basalt
-Bauxite
->>>>>>> 2e250bb1616fc1908dc42608d347bd49d52f6655
+Adamantine [Textured by John1]
+Alabaster [Textured by Enke]
+Aluminum [Textured by Enke]
+Alunite [Textured by Enke]
+Andesite [Textured by Enke]
+Anhydrite [Textured by Enke]
+Basalt [Textured by Enke]
+Bauxite	[Textured by Enke]
+Bismuthine Bronze [Textured by John1]
+Bituminous Coal [Textured by John1]
+Borax [Textured by John1]
