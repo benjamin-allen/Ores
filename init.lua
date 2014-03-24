@@ -301,3 +301,182 @@ minetest.register_craftitem("ores:boraxrock", {
 	description = "Borax Rock",
 	inventory_image = "ores_boraxrock.png"
 })
+
+--Brimstone
+
+minetest.register_node("ores:brimstone", {
+	description = "Brimstone",
+	tiles = {"ores_brimstone.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:brimstone',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:brimstone",
+	wherein			= "default:stone",
+	clust_scarcity	= 20*20*20,
+	clust_num_ores	= 47,
+	clust_size		= 8,
+	height_min		= -31000,
+	height_max		= -512,
+})
+
+--Calcite
+
+minetest.register_node("ores:calciteore", {
+	description = "Calcite Ore",
+	tiles = {"default_stone.png^ores_calciteore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:calcitecrystal',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:calciteore",
+	wherein			= "default:stone",
+	clust_scarcity	= 10*10*10,
+	clust_num_ores	= 8,
+	clust_size		= 3,
+	height_min		= -2048,
+	height_max		= 0,
+})
+
+minetest.register_craftitem("ores:calcitecrystal", {
+	description = "Calcite Crystal",
+	inventory_image = "ores_calcitecrystal.png"
+})
+
+--Cassiterite
+
+minetest.register_node("ores:cassore", {
+	description = "Cassiterite Ore",
+	tiles = {"default_stone.png^ores_cassore.png"},
+	is_ground_content = true,
+	groups = {cracky=1},
+	drop = 'ores:casslump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:cassore",
+	wherein			= "default:stone",
+	clust_scarcity	= 8*8*8,
+	clust_num_ores	= 13,
+	clust_size		= 4,
+	height_min		= -1024,
+	height_max		= -512,
+})
+
+minetest.register_craftitem("ores:casslump", {
+	description = "Casserite Lump",
+	inventory_image = "ores_casslump.png"
+})
+
+--Chalk
+
+minetest.register_node("ores:chalk", {
+	description = "Chalk",
+	tiles = {"ores_chalk.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:chalk',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:chalk",
+	wherein			= "default:stone",
+	clust_scarcity	= 13*13*13,
+	clust_num_ores	= 40,
+	clust_size		= 7,
+	height_min		= -1024,
+	height_max		= 0,
+})
+
+--Chert
+
+minetest.register_node("ores:chertore", {
+	description = "Chert Ore",
+	tiles = {"default_stone.png^ores_chertore.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:chertlump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:chertore",
+	wherein			= "default:stone",
+	clust_scarcity	= 19*19*19,
+	clust_num_ores	= 7,
+	clust_size		= 4,
+	height_min		= -512,
+	height_max		= -400,
+})
+
+minetest.register_craftitem("ores:chertlump", {
+	description = "Chert Lump",
+	inventory_image = "ores_chertlump.png"
+})
+
+--Chromite
+
+minetest.register_node("ores:chromiteore", {
+	description = "Chromite Ore",
+	tiles = {"default_stone.png^ores_chromiteore.png"},
+	is_ground_content = true,
+	groups = {cracky=1},
+	drop = 'ores:chromitelump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:chromiteore",
+	wherein			= "default:stone",
+	clust_scarcity	= 27*27*27,
+	clust_num_ores	= 12,
+	clust_size		= 5,
+	height_min		= -2048,
+	height_max		= -512,
+})
+
+minetest.register_craftitem("ores:chromitelump", {
+	description = "Chromite Lump",
+	inventory_image = "ores_chromitelump.png"
+})
+
+--Cinnabar
+
+minetest.register_node("ores:cinore", {
+	description = "Cinnabar",
+	tiles = {"default_stone.png^ores_cinore.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:cinlump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:cinore",
+	wherein			= "default:stone",
+	clust_scarcity	= 10*10*10,
+	clust_num_ores	= 28,
+	clust_size		= 6,
+	height_min		= -1024,
+	height_max		= -512,
+})
+
+minetest.register_craftitem("ores:cinlump", {
+	description = "Cinnabar Lump",
+	inventory_image = "ores_cinlump.png"
+})
