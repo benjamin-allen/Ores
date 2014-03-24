@@ -220,3 +220,84 @@ minetest.register_craftitem("ores:bauxiterock", {
 	description = "Bauxite Rock",
 	inventory_image = "ores_bauxiterock.png"
 })
+
+--Bismuthine Bronze
+
+minetest.register_node("ores:bismuthore", {
+	description = "Bismuthine Bronze",
+	tiles = {"default_stone.png^ores_bismuthore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:bismuthlump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:bismuthore",
+	wherein			= "default:stone",
+	clust_scarcity	= 10*10*10,
+	clust_num_ores	= 18,
+	clust_size		= 8,
+	height_min		= -10000,
+	height_max		= -256,
+})
+
+minetest.register_craftitem("ores:bismuthlump", {
+	description = "Bismuth Lump",
+	inventory_image = "ores_bismuthlump.png"
+})
+
+--Bituminous Coal
+
+minetest.register_node("ores:bituminousore", {
+	description = "Bituminous Coal Ore",
+	tiles = {"default_stone.png^ores_bituminousore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:bituminouscoal',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:bituminousore",
+	wherein			= "default:stone",
+	clust_scarcity	= 9*9*9,
+	clust_num_ores	= 9,
+	clust_size		= 8,
+	height_min		= -10000,
+	height_max		= -256,
+})
+
+minetest.register_craftitem("ores:bituminouscoal", {
+	description = "Bituminous Coal",
+	inventory_image = "ores_bituminouscoal.png"
+})
+
+--Borax
+
+minetest.register_node("ores:boraxore", {
+	description = "Borax",
+	tiles = {"default_stone.png^ores_boraxore.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:boraxrock',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:boraxore",
+	wherein			= "default:stone",
+	clust_scarcity	= 13*13*13,
+	clust_num_ores	= 13,
+	clust_size		= 5,
+	height_min		= -1024,
+	height_max		= -256,
+})
+
+minetest.register_craftitem("ores:boraxrock", {
+	description = "Borax Rock",
+	inventory_image = "ores_boraxrock.png"
+})
