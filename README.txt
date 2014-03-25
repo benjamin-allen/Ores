@@ -5,7 +5,7 @@ By Enke/NANOsoldierenke
 An ores mod intended for Mito551's Dwarves Game. It can also be used as a standalone mod at this point in time.
 ================================
 List of Ores:
-<<<<<<< HEAD
+
 Adamantine [Textured by John1][WTFPL]
 Alabaster [Textured by Enke][WTFPL]
 Aluminum [Textured by Enke][WTFPL]
@@ -24,3 +24,5 @@ Chalk [Textured by John1][WTFPL]
 Chert [Textured by John1][WTFPL]
 Chromite [Textured by John1][WTFPL]
 Cinnabar [Textured by John1][WTFPL]
+Claystone [Textured by Enke][WTFPL]
+Cobaltite [Textured by Enke][WTFPL]

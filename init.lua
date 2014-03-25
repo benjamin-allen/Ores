@@ -480,3 +480,52 @@ minetest.register_craftitem("ores:cinlump", {
 	description = "Cinnabar Lump",
 	inventory_image = "ores_cinlump.png"
 })
+
+--Claystone
+
+minetest.register_node("ores:claystone", {
+	description = "Claystone",
+	tiles = {"ores_claystone.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'default:clay_lump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:claystone",
+	wherein			= "default:stone",
+	clust_scarcity	= 15*15*15,
+	clust_num_ores	= 7,
+	clust_size		= 4,
+	height_min		= -4096,
+	height_max		= 0,
+})
+
+--Cobaltite
+
+minetest.register_node("ores:cobaltiteore", {
+	description = "Cobaltite",
+	tiles = {"default_stone.png^ores_cobaltiteore.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:cobaltlump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:cobaltiteore",
+	wherein			= "default:stone",
+	clust_scarcity	= 9*9*9,
+	clust_num_ores	= 11,
+	clust_size		= 4,
+	height_min		= -1024,
+	height_max		= -128,
+})
+
+minetest.register_craftitem("ores:cobaltlump", {
+	description = "Cobalt Lump",
+	inventory_image = "ores_cobaltlump.png"
+})
