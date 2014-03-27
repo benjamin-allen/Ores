@@ -529,3 +529,52 @@ minetest.register_craftitem("ores:cobaltlump", {
 	description = "Cobalt Lump",
 	inventory_image = "ores_cobaltlump.png"
 })
+
+--Conglomerate
+
+minetest.register_node("ores:conglomerateore", {
+	description = "Conglomerate",
+	tiles = {"ores_conglomerateore.png"},
+	is_ground_content = true,
+	groups = {cracky=3},
+	drop = 'ores:conglomerateore',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:conglomerateore",
+	wherein			= "default:stone",
+	clust_scarcity	= 9*9*9,
+	clust_num_ores	= 21,
+	clust_size		= 5,
+	height_min		= -31000,
+	height_max		= 128,
+})
+
+--Cryolite
+
+minetest.register_node("ores:cryoliteore", {
+	description = "Cobaltite",
+	tiles = {"default_stone.png^ores_cryoliteore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:cobaltlump',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:cobaltiteore",
+	wherein			= "default:stone",
+	clust_scarcity	= 16*16*16,
+	clust_num_ores	= 7,
+	clust_size		= 3,
+	height_min		= -2048,
+	height_max		= -512,
+})
+
+minetest.register_craftitem("ores:cryolitelump", {
+	description = "Cryolite Lump",
+	inventory_image = "ores_cryolitelump.png"
+})
