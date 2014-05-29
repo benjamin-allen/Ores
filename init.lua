@@ -555,17 +555,17 @@ minetest.register_ore({
 --Cryolite
 
 minetest.register_node("ores:cryoliteore", {
-	description = "Cobaltite",
+	description = "Cryolite",
 	tiles = {"default_stone.png^ores_cryoliteore.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
-	drop = 'ores:cobaltlump',
+	drop = 'ores:cryolitelump',
 	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_ore({
 	ore_type		= "scatter",
-	ore				= "ores:cobaltiteore",
+	ore				= "ores:cryoliteore",
 	wherein			= "default:stone",
 	clust_scarcity	= 16*16*16,
 	clust_num_ores	= 7,
@@ -577,4 +577,26 @@ minetest.register_ore({
 minetest.register_craftitem("ores:cryolitelump", {
 	description = "Cryolite Lump",
 	inventory_image = "ores_cryolitelump.png"
+})
+
+--Dacite
+
+minetest.register_node("ores:daciteore", {
+	description = "Dacite",
+	tiles = {"ores_daciteore.png"},
+	is_ground_content = true,
+	groups = {cracky=2},
+	drop = 'ores:daciteore',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_ore({
+	ore_type		= "scatter",
+	ore				= "ores:daciteore",
+	wherein			= "default:stone",
+	clust_scarcity	= 8*8*8,
+	clust_num_ores	= 7,
+	clust_size		= 3,
+	height_min		= -10000,
+	height_max		= -1000,
 })
